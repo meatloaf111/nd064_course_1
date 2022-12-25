@@ -26,5 +26,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./project
+          file: ./Dockerfile
           push: true
           tags: meatloaf111/techtrends:latest
