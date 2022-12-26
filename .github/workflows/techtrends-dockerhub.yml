@@ -32,4 +32,4 @@ jobs:
           file: ./project/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: meatloaf111/techtrends:latest
+          tags: meatloaf1/techtrends:latest
