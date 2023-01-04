@@ -29,11 +29,11 @@ spec:
         livenessProbe:
           httpGet:
             path: {{ .Values.livenessProbe.path }}
-            port: {{ .Values.containerPort }}
+            port: {{ .Values.service.port }}
         readinessProbe:
           httpGet:
             path: {{ .Values.readinessProble.path }}
-            port: {{ .Values.containerPort }}
+            port: {{ .Values.service.port }}
         ports:
           - containerPort: {{ .Values.containerPort }}
             
