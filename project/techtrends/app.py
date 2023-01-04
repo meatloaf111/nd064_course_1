@@ -103,6 +103,7 @@ if __name__ == "__main__":
     fmt = "%(levelname)s %(name)s %(asctime)s:%(message)s"
     logging.basicConfig(level=logging.DEBUG,format=fmt,handlers=[
         logging.FileHandler("app.log"),
-        logging.StreamHandler(sys.stdout)
+        logging.StreamHandler(sys.stdout),
+        logging.StreamHandler(sys.stderr)
     ])
     app.run(host='0.0.0.0', port='3111')
